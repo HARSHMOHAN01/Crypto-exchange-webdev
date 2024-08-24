@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Coin Game - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="fullscreen-container">
+        <div id="login-section" class="section">
+            <h1>Flip Coin Game</h1>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Login</button>
+                <p id="login-error" class="error-message"></p>
+            </form>
+        </div>
+        <div id="wallet-section" class="section" style="display:none;">
+            <h1>Add Wallet</h1>
+            <form id="wallet-form">
+                <label for="wallet-username">Wallet Username:</label>
+                <input type="text" id="wallet-username" required>
+                <label for="wallet-password">Wallet Password:</label>
+                <input type="password" id="wallet-password" required>
+                <button type="submit">Add Wallet</button>
+                <p id="wallet-message" class="message"></p>
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

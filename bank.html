@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account & Coin Flip Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="fullscreen-container">
+        <div class="header">
+            <button id="logout" class="header-button">Logout</button>
+            <button id="close-wallet" class="header-button">Close Wallet</button>
+        </div>
+        <div id="account-section" class="section">
+            <h1>Bank Account System</h1>
+            <p>Available Balance: $<span id="balance">0.00</span></p>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" step="0.01" min="0.01">
+            <button id="deposit">Deposit</button>
+            <button id="withdraw">Withdraw</button>
+            <p id="transaction-message" class="message"></p>
+        </div>
+        <div id="crypto-section" class="section">
+            <h1>Select Cryptocurrency</h1>
+            <select id="crypto-select">
+                <option value="eth">Ethereum (ETH)</option>
+                <option value="sol">Solana (SOL)</option>
+                <option value="btc">Bitcoin (BTC)</option>
+            </select>
+            <p>Crypto Balance: <span id="crypto-balance">0.00</span> <span id="crypto-symbol">ETH</span></p>
+        </div>
+        <div id="coinflip-section" class="section">
+            <h1>Coin Flip Game</h1>
+            <label for="side-select">Choose side:</label>
+            <select id="side-select">
+                <option value="heads">Heads</option>
+                <option value="tails">Tails</option>
+            </select>
+            <label for="bet-amount">Bet Amount:</label>
+            <input type="number" id="bet-amount" step="0.01" min="0.01">
+            <button id="flip-coin">Flip Coin</button>
+            <p id="coinflip-result"></p>
+            <p id="convert-warning" class="warning-message"></p>
+        </div>
+    </div>
+    <script src="bank.js"></script>
+</body>
+</html>
